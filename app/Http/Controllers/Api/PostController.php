@@ -62,4 +62,17 @@ class PostController extends Controller
         //return response
         return new PostResource(true, 'Data Post Berhasil Ditambahkan!', $post);
       }
+
+      /**
+       * show
+       *
+       * @param mixed $post
+       * @return void
+       */
+
+    //    model/dependency injection
+      public function show(Post $post){
+        // return single post as a resource
+        return new PostResource(true, 'Data Post Ditemukan!', $post);
+      }
 }
