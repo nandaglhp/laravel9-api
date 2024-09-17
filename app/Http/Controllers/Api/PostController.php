@@ -3,11 +3,11 @@
 namespace App\Http\Controllers\Api;
 
 use App\Models\Post; // data dari database
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 use App\Http\Resources\PostResource; // data --> json
-use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Storage; // hapus gambar dari server
+use Illuminate\Support\Facades\Validator;
 
 class PostController extends Controller
 {
